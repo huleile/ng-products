@@ -24,7 +24,7 @@ export class CartService {
   }
 
   getShippingPrices() {
-    return this.http.get('http://localhost:32100/shipping');
+    return this.http.get('http://localhost:43210/shipping');
   }
 
 }
