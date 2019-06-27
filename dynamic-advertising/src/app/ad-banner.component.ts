@@ -8,7 +8,7 @@ import { AdComponent } from "./ad.component";
     template: `
         <div class='ad-banner-example'>
             <h3>Advertisements</h3>
-            <<ng-template ad-host></ng-template>
+            <<ng-template appAdHost></ng-template>
         </div>
     `
 })
