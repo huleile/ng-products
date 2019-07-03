@@ -1,15 +1,15 @@
 import { UserEntity } from './../entities/user.entity';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.less']
 })
 export class HeaderComponent implements OnInit {
 
-  logo: string;
-  user: UserEntity;
+  @Input() logo: string;
+  @Input() user: UserEntity;
   constructor() { }
 
   ngOnInit() {
