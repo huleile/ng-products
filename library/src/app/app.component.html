@@ -1,9 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-header [user]="user" [logo]="logo"></app-header>
+<app-header *ngIf="!showLogin" [user]="user" [logo]="logo" (showLogin)=""></app-header>
 
-<div>
+<div class="outlet">
   <router-outlet></router-outlet>
 </div>
 
-
-<app-footer></app-footer>
+<app-footer *ngIf="!showLogin"></app-footer>
