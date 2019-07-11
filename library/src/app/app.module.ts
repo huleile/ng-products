@@ -1,3 +1,4 @@
+import { LocalStorage } from './services/storage.service';
 import { BookService } from './services/book.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -32,7 +33,8 @@ import { RMBPipe } from './pipes/price.cn.pipe';
    ],
    providers: [
       AuthService,
-      BookService
+      BookService,
+      LocalStorage
    ],
    bootstrap: [
       AppComponent

@@ -1,6 +1,8 @@
+import { LocalStorage } from './../services/storage.service';
 import { Component, OnInit } from '@angular/core';
 import { UserEntity } from '../entities';
 import { AuthService } from '../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,9 +14,15 @@ export class HomeComponent implements OnInit {
   logo = 'assets/rabbit.png';
   user: UserEntity;
 
-  constructor(private auth: AuthService) {}
+  constructor(
+    private localStorage: LocalStorage,
+    private router: Router
+  ) {}
 
-  ngOnInit(): void {
-    this.user = this.auth.getOUser();
+  ngOnInit() {
+    this.user = this.localStorage.getObject<UserEntity>(`user`);
+    if (!this.user) {
+      this.router.navigateByUrl('login');
+    }
   }
 }

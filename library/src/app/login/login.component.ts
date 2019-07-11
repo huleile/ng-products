@@ -19,10 +19,15 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.user = {
+        name: 'hully',
+        password: 'hully',
+        age: 26
+    };
   }
 
   login(user: UserEntity) {
-    this.auth.login();
+    this.auth.login(user);
     this.router.navigateByUrl('');
   }
 }

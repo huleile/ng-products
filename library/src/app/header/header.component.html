@@ -2,10 +2,11 @@
   <span class="logo">
     <img [src]="logo" alt="rabbit" />
   </span>
-  <span class="user-info" *ngIf="user">
-    Welcome {{user.name}}
+  <span class="is-login user-info" *ngIf="user">
+    Welcome {{user.name}},
+    <span class="logout" (click)="logout()">Logout</span>
   </span>
-  <span class="header-login" *ngIf="!user">
+  <span class="is-login header-login" *ngIf="!user">
     <a [routerLink]="[ '/login' ]">Login</a>
   </span>
 </div>
