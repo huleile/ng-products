@@ -5,8 +5,8 @@
   <span class="user-info" *ngIf="user">
     Welcome {{user.name}}
   </span>
-  <span class="header-login" *ngIf="!user" (click)="login">
-    Login
+  <span class="header-login" *ngIf="!user">
+    <a [routerLink]="[ '/login' ]">Login</a>
   </span>
 </div>
   

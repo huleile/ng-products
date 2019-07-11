@@ -1,9 +1,6 @@
 <div class="app-login">
   <div class="login-title"><h2>Login</h2></div>
-  <!-- <div class="login-body" #body>
-    <input type="text" name="name" [(ngModel)]="name" />
-  </div> -->
-  <div class="login-buttons">
-    <button (click)="auth.login(body)">Login</button>
-  </div>
+  <label for="name">Name:</label> <input type="text" [(ngModel)]="user.name" name="name">
+  <label for="password">Password:</label> <input type="text" [(ngModel)]="user.password" name="password">
+  <button class="login-btn" (click)="login(user)">Login</button>
 </div>

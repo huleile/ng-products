@@ -1,3 +1,8 @@
-<div class="app-home">
+<app-header [user]="user" [logo]="logo"></app-header>
+
+<div class="home-outlet">
   Welcome to ©hully.fun
+  <router-outlet></router-outlet>
 </div>
+
+<app-footer></app-footer>

@@ -47,5 +47,8 @@
       "name": "秦叔宝"
     }
   ],
-  "todos": []
+  "todos": [],
+  "books": [
+    { "title": "三国演义", "author": "罗贯中", "price": 39 }
+  ]
 }
