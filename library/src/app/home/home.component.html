@@ -1,7 +1,10 @@
 <app-header [user]="user" [logo]="logo"></app-header>
 
-<div class="home-outlet">
-  Welcome to ©hully.fun
+<div class="app-home">
+  <ul class="home-nav">
+    <li class="active home-nav-item"><a [routerLink]="[ '/books' ]">Books</a></li>
+    <li class="home-nav-item"><a [routerLink]="[ '/users' ]">Users</a></li>
+  </ul>
   <router-outlet></router-outlet>
 </div>
 
