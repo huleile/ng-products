@@ -1,0 +1,37 @@
+.home-nav {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #D0D0D0;
+
+    .home-nav-item {
+        float: left;
+
+        a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        :hover {
+            background-color:  #886656;
+            color: #ffffff;
+        }
+
+        :hover:not(.active) {
+            background-color: #888888;
+        }
+
+    }
+
+    .active {
+        color: #6633ff;
+        background-color: #4caf50;
+        text-shadow: 1px 1px 1px #bb33ff;
+    }
+
+}

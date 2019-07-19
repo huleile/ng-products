@@ -15,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { BooksComponent } from './books/books.component';
 import { RMBPipe } from './pipes/price.cn.pipe';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { HomeNavComponent } from './home-nav/home-nav.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
    declarations: [
@@ -24,7 +26,9 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
       LoginComponent,
       HomeComponent,
       BooksComponent,
-      RMBPipe
+      RMBPipe,
+      HomeNavComponent,
+      UsersComponent
    ],
    imports: [
       BrowserModule,
