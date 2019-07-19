@@ -1,15 +1,17 @@
 .home-nav {
-    width: 100%;
+    // width: 100%;
     list-style-type: none;
+    display: inline-block;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #D0D0D0;
 
     .home-nav-item {
-        float: left;
+        display: inline;
 
         a {
+            float: left;
             display: block;
             color: #666;
             text-align: center;
@@ -20,6 +22,7 @@
         :hover {
             background-color:  #886656;
             color: #ffffff;
+            cursor: pointer;
         }
 
         :hover:not(.active) {
